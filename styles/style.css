@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bgBody);
+}
+
+.light {
+    --bgBody: #00FF00;
+    --btnBg: #00FF00;
+    --btnBorder: black;
+    --fColor: black;
+    --cHover: white;
+    --bgHover: black;
+}
+
+.dark {
+    --bgBody: black;
+    --btnBg: black;
+    --btnBorder: #00FF00;
+    --fColor: #00FF00;
+    --cHover: black;
+    --bgHover: #00FF00;
+}
+
+button#button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    cursor: pointer;
+    padding: 20px;
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--fColor);
+    border: 2px solid var(--btnBorder);
+    border-radius: 7px;
+    transform: translate(-50%, -50%);
+    background-color: var(--btnBg);
+    transition: 0.9s;
+}
+
+button#button:hover {
+    color: var(--cHover);
+    background-color: var(--bgHover);
+}
